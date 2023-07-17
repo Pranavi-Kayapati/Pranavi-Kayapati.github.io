@@ -278,6 +278,11 @@ ul {
   padding: 5px 15px;
 }
 
+.aside .nav div button {
+  border: none;
+  background: none;
+}
+
 .aside .nav div a {
   text-decoration: none;
   color: black;
