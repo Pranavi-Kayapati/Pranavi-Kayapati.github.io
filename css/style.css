@@ -822,6 +822,7 @@ h3.my-profession {
   }
   .section {
     left: 0;
+    padding-left: 80px;
   }
   .section.open {
     left: 270px;
