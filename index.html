@@ -61,30 +61,35 @@
           <span></span>
         </div>
         <ul class="nav">
-          <li class="nav-link home">
-            <a href="#home" class="active"
+          <li>
+            <a href="#home" class="active" class="nav-link home"
               ><i class="fa fa-home padd-15"> Home</i>
             </a>
           </li>
-          <li class="nav-link about">
-            <a href="#about"><i class="fa fa-user padd-15"> About</i> </a>
+          <li>
+            <a class="nav-link about" href="#about"
+              ><i class="fa fa-user padd-15"> About</i>
+            </a>
           </li>
-          <li class="nav-link skills">
-            <a href="#skills"><i class="fa fa-list padd-15"> Skills</i></a>
+          <li>
+            <a class="nav-link skills" href="#skills"
+              ><i class="fa fa-list padd-15"> Skills</i></a
+            >
           </li>
-          <li class="nav-link projects">
-            <a href="#projects"
+          <li>
+            <a href="#projects" class="nav-link projects"
               ><i class="fa fa-briefcase padd-15"> Portfolio</i></a
             >
           </li>
-          <li class="nav-link contact">
-            <a href="#contact"
+          <li>
+            <a href="#contact" class="nav-link contact"
               ><i class="fa fa-comments padd-15"> Contact</i>
             </a>
           </li>
           <div>
-            <button id="resume-button-1" class="nav-link resume">
+            <button id="resume-button-1">
               <a
+                class="nav-link resume"
                 href="./css/images/Pranavi_Kayapati_Resume.pdf"
                 target="_blank"
                 id="resume-link-1"
@@ -105,6 +110,9 @@
           <div class="container">
             <div class="row">
               <div class="home-info" padd-15>
+                <div class="home-img hidden padd-15" src="">
+                  <img src="./css/images/1.png" alt="" />
+                </div>
                 <h3 class="hello">
                   Hello,my name is
                   <span class="name" id="user-detail-name"
@@ -234,7 +242,7 @@
                 </div>
                 <div class="row">
                   <div class="education padd-15">
-                    <h3 class="title">Education</h3>
+                    <h1>Education</h1>
                     <div class="row">
                       <div class="timeline-box padd-15">
                         <div class="timeline shadow-dark">
@@ -247,6 +255,14 @@
                             <h3 class="timeline-date">
                               <i class="fa fa-calendar"></i> Nov 2022-Present
                             </h3>
+                            <p class="timeline-text">
+                              <span class="timeline-title">College :</span>
+                              Masai School
+                            </p>
+                            <p class="timeline-text">
+                              <span class="timeline-title">Location :</span
+                              >Bengaluru, Karnataka
+                            </p>
 
                             <p class="timeline-text">
                               Full stack web development is the process of
@@ -258,33 +274,53 @@
                           <div class="timeline-item">
                             <div class="circle-dot"></div>
                             <h3 class="timeline-date">
-                              <i class="fa fa-calendar"></i> 2033-4044
+                              <i class="fa fa-calendar"></i> 2019-2022
                             </h3>
                             <h4 class="timeline-title">
-                              batcholres in computer science
+                              Batcholres in statistics
                             </h4>
                             <p class="timeline-text">
-                              Lorem ipsum dolor, sit amet consectetur
-                              adipisicing elit. Voluptatibus quas atque minus
-                              distinctio unde ratione tenetur suscipit delectus
-                              asperiores voluptate!
+                              <span class="timeline-title">College :</span>SSBN
+                              Degree College
+                            </p>
+
+                            <p class="timeline-text">
+                              <span class="timeline-title">Location :</span
+                              >Ananthapur, Andhra Pradesh
+                            </p>
+
+                            <p class="timeline-text">
+                              The Study of Statistics that involves collecting,
+                              interpreting, and analyzing data to uncover
+                              patterns, trends, and meaningful information that
+                              aids in decision-making across various fields.
                             </p>
                           </div>
                           <!-- ===== timeline items ======  -->
                           <div class="timeline-item">
                             <div class="circle-dot"></div>
                             <h3 class="timeline-date">
-                              <i class="fa fa-calendar"></i> 2033-4044
+                              <i class="fa fa-calendar"></i> 2017-2019
                             </h3>
                             <h4 class="timeline-title">
-                              batcholres in computer science
+                              Higher secondary education
                             </h4>
                             <p class="timeline-text">
+                              <span class="timeline-title">College :</span>AP
+                              Model School
+                            </p>
+
+                            <p class="timeline-text">
+                              <span class="timeline-title">Location :</span
+                              >Putlur, Andhra Pradesh
+                            </p>
+
+                            <!-- <p class="timeline-text">
                               Lorem ipsum dolor, sit amet consectetur
                               adipisicing elit. Voluptatibus quas atque minus
                               distinctio unde ratione tenetur suscipit delectus
                               asperiores voluptate!
-                            </p>
+                            </p> -->
                           </div>
                         </div>
                       </div>
@@ -670,32 +706,32 @@
                     <h2 class="project-title">Pet Hub</h2>
                     <p class="project-description">
                       A pet care platform offering lodging, boarding, training,
-                      and adoption services. Experience pet care like never
-                      before, all in a single hub.
+                      and adoption services.
                     </p>
-                    <h5 class="project-tech-stack">
-                      Tech Stack: HTML,CSS,React,Redux,Node,ExpressJs and
-                      Mongodb
-                    </h5>
-                    <a
-                      class="project-github-link"
-                      href="https://github.com/Pranavi-Kayapati/resilient-partner-524"
-                    >
-                      <i
-                        class="fab fa-github fa-2x"
-                        style="color: var(--skin-color)"
-                      ></i>
-                    </a>
-                    <span>|</span>
-                    <a
-                      class="project-deployed-link"
-                      href="https://frontend-three-kohl.vercel.app/"
-                    >
-                      <i
-                        class="fas fa-external-link-alt fa-2x"
-                        style="color: var(--skin-color)"
-                      ></i>
-                    </a>
+                    <h4 class="project-tech-stack">
+                      Tech Stack: HTML,CSS,React,Node,ExpressJs and Mongodb
+                    </h4>
+                    <div class="project-links">
+                      <a
+                        class="project-github-link"
+                        href="https://github.com/Pranavi-Kayapati/resilient-partner-524"
+                      >
+                        <i
+                          class="fab fa-github fa-2x"
+                          style="color: var(--skin-color)"
+                        ></i>
+                      </a>
+                      <span></span>
+                      <a
+                        class="project-deployed-link"
+                        href="https://frontend-three-kohl.vercel.app/"
+                      >
+                        <i
+                          class="fas fa-external-link-alt fa-2x"
+                          style="color: var(--skin-color)"
+                        ></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -712,28 +748,30 @@
                       An e-commerce website that sells the furniture and home
                       decorative products.
                     </p>
-                    <h5 class="project-tech-stack">
+                    <h4 class="project-tech-stack">
                       Tech Stack: HTML,CSS,React,Redux and Typescript.
-                    </h5>
-                    <a
-                      class="project-github-link"
-                      href="https://github.com/Pranavi-Kayapati/resilient-partner-542"
-                    >
-                      <i
-                        class="fab fa-github fa-2x"
-                        style="color: var(--skin-color)"
-                      ></i>
-                    </a>
-                    <span>|</span>
-                    <a
-                      class="project-deployed-link"
-                      href="https://wooden-crafts.vercel.app/"
-                    >
-                      <i
-                        class="fas fa-external-link-alt fa-2x"
-                        style="color: var(--skin-color)"
-                      ></i>
-                    </a>
+                    </h4>
+                    <div class="project-links">
+                      <a
+                        class="project-github-link"
+                        href="https://github.com/Pranavi-Kayapati/resilient-partner-542"
+                      >
+                        <i
+                          class="fab fa-github fa-2x"
+                          style="color: var(--skin-color)"
+                        ></i>
+                      </a>
+                      <span></span>
+                      <a
+                        class="project-deployed-link"
+                        href="https://wooden-crafts.vercel.app/"
+                      >
+                        <i
+                          class="fas fa-external-link-alt fa-2x"
+                          style="color: var(--skin-color)"
+                        ></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -750,28 +788,30 @@
                       An online jewelry store that sells diamond, gold, and
                       platinum jewelry.
                     </p>
-                    <h5 class="project-tech-stack">
+                    <h4 class="project-tech-stack">
                       Tech Stack: HTML,CSS and JavaScript
-                    </h5>
-                    <a
-                      class="project-github-link"
-                      href="https://github.com/chaudhari014/legit-building-8885"
-                    >
-                      <i
-                        class="fab fa-github fa-2x"
-                        style="color: var(--skin-color)"
-                      ></i>
-                    </a>
-                    <span>|</span>
-                    <a
-                      class="project-deployed-link"
-                      href="https://dulcet-monstera-862eeb.netlify.app/"
-                    >
-                      <i
-                        class="fas fa-external-link-alt fa-2x"
-                        style="color: var(--skin-color)"
-                      ></i>
-                    </a>
+                    </h4>
+                    <div class="project-links">
+                      <a
+                        class="project-github-link"
+                        href="https://github.com/chaudhari014/legit-building-8885"
+                      >
+                        <i
+                          class="fab fa-github fa-2x"
+                          style="color: var(--skin-color)"
+                        ></i>
+                      </a>
+                      <span></span>
+                      <a
+                        class="project-deployed-link"
+                        href="https://dulcet-monstera-862eeb.netlify.app/"
+                      >
+                        <i
+                          class="fas fa-external-link-alt fa-2x"
+                          style="color: var(--skin-color)"
+                        ></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -788,28 +828,30 @@
                       An e-commerce website that sells the furniture and home
                       decorative products.
                     </p>
-                    <h5 class="project-tech-stack">
+                    <h4 class="project-tech-stack">
                       Tech Stack: HTML,CSS and JavaScript
-                    </h5>
-                    <a
-                      class="project-github-link"
-                      href="https://github.com/Pranavi-Kayapati/unable-stop-3158"
-                    >
-                      <i
-                        class="fab fa-github fa-2x"
-                        style="color: var(--skin-color)"
-                      ></i>
-                    </a>
-                    <span>|</span>
-                    <a
-                      class="project-deployed-link"
-                      href="https://lucent-sherbet-5c135e.netlify.app/"
-                    >
-                      <i
-                        class="fas fa-external-link-alt fa-2x"
-                        style="color: var(--skin-color)"
-                      ></i>
-                    </a>
+                    </h4>
+                    <div class="project-links">
+                      <a
+                        class="project-github-link"
+                        href="https://github.com/Pranavi-Kayapati/unable-stop-3158"
+                      >
+                        <i
+                          class="fab fa-github fa-2x"
+                          style="color: var(--skin-color)"
+                        ></i>
+                      </a>
+                      <span></span>
+                      <a
+                        class="project-deployed-link"
+                        href="https://lucent-sherbet-5c135e.netlify.app/"
+                      >
+                        <i
+                          class="fas fa-external-link-alt fa-2x"
+                          style="color: var(--skin-color)"
+                        ></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
