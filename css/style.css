@@ -689,6 +689,33 @@ h3.my-profession {
   line-height: 25px;
 }
 
+/* GitHub */
+
+.git-list .react-activity-calendar img {
+  width: 95%;
+  padding: 10px;
+  border: 6px solid var(--bg-black-100);
+  margin: 20px auto;
+}
+.git-list .git-streak-and-stats {
+  display: flex;
+  justify-content: space-evenly;
+}
+.git-list .git-streak-and-stats img {
+  width: 50%;
+}
+.git-list .git-work {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.git-list .git-work #github-top-langs {
+  width: 40%;
+  margin: 20px auto;
+}
 /* portfolio */
 .portfolio .container {
   padding-bottom: 40px;
@@ -916,11 +943,44 @@ h3.my-profession {
     width: 100%;
     gap: 10px;
   }
+  .git-list .react-activity-calendar img {
+    width: 100%;
+    /* padding: 10px; */
+    border: 6px solid var(--bg-black-100);
+    margin: auto;
+  }
+  .git-list .git-streak-and-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .git-list .git-streak-and-stats img {
+    width: 70%;
+    margin: auto;
+  }
+  .git-list .git-work {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .git-list .git-work #github-top-langs {
+    width: 70%;
+    margin: 20px auto;
+  }
 }
 
 @media (max-width: 467px) {
   .contact .contact-info-item {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .git-list .react-activity-calendar img {
+    width: 100%;
+    padding: 10px;
+    border: 6px solid var(--bg-black-100);
+    margin: 20px auto;
   }
 }
