@@ -36,6 +36,24 @@ for (let i = 0; i < totalNavList; i++) {
   });
 }
 
+window.addEventListener("scroll", function () {
+  // Find the section currently in the viewport
+  for (let i = 0; i < totalSection; i++) {
+    const section = allSection[i];
+    const rect = section.getBoundingClientRect();
+
+    if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+      removeBackSection();
+      allSection[i].classList.add("active");
+
+      // Update the navigation based on the active section
+      updateNav(navList[i].querySelector("a"));
+    }
+  }
+});
+
+const mainContent = document.querySelector(".main-content");
+
 function removeBackSection() {
   for (let i = 0; i < totalSection; i++) {
     allSection[i].classList.remove("back-section");
