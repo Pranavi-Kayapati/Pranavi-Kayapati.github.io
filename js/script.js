@@ -107,3 +107,25 @@ function asideSectionToggleBtn() {
     allSection[i].classList.toggle("open");
   }
 }
+
+const openResume = () => {
+  document
+    .getElementById("resume-button-1")
+    .addEventListener("click", function (event) {
+      event.preventDefault(); // Prevent the default behavior of the anchor tag
+
+      var resumeLink = document
+        .getElementById("resume-link-1")
+        .getAttribute("href");
+      window.open(resumeLink, "_blank"); // Open the link in a new tab
+
+      // Trigger a download by creating an invisible anchor element
+      var downloadAnchor = document.createElement("a");
+      downloadAnchor.style.display = "none";
+      downloadAnchor.href = resumeLink;
+      downloadAnchor.download = "Pranavi-Kayapati-resume.pdf"; // You can specify the desired filename here
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      document.body.removeChild(downloadAnchor);
+    });
+};
