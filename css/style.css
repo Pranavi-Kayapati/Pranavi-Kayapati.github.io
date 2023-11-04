@@ -870,7 +870,7 @@ h3.my-profession {
 
 @media (max-width: 1199px) {
   .section .container {
-    padding-top: 70px;
+    padding-top: 90px;
   }
   .home-container .home-info {
     padding: 0;
@@ -890,10 +890,14 @@ h3.my-profession {
   }
   .section {
     left: 0;
-    padding-left: 80px;
+    padding-left: 60px;
   }
   .section.open {
     left: 270px;
+  }
+  .about .about-content .personal-info .info-item {
+    text-align: left;
+    overflow: auto;
   }
   .about .about-content .personal-info .info-item p span {
     display: block;
