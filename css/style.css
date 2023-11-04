@@ -339,6 +339,11 @@ h3.my-profession {
   color: var(--text-black-700);
 }
 
+#top-img {
+  position: relative;
+  left: 20%;
+}
+
 .home-container .home-img {
   flex: 0 0 40%;
   max-width: 40%;
@@ -902,6 +907,12 @@ h3.my-profession {
     flex: 0 0 50%;
     max-width: 50%;
   }
+  .home-container .row {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
   .hidden {
     display: block;
     visibility: visible;
@@ -911,8 +922,33 @@ h3.my-profession {
     max-width: 100%;
     padding: 0;
   }
+
   .home-container .home-img {
-    display: none;
+    flex: 0 0 70%;
+    max-width: 70%;
+    text-align: center;
+    position: relative;
+  }
+  .home-img::after {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    right: -50px;
+    bottom: 10px;
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
+  }
+
+  .home-img::before {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    left: -30px;
+    top: -20px;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
   }
   .know-list {
     display: grid;
@@ -936,6 +972,27 @@ h3.my-profession {
   .about .about-content .personal-info {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .home-img::after {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    right: -60px;
+    bottom: 10px;
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
+  }
+
+  .home-img::before {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    left: -20px;
+    top: -20px;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
   }
   .know-list {
     display: grid;
@@ -976,6 +1033,48 @@ h3.my-profession {
   .contact .contact-info-item {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  .home-container .home-img {
+    flex: 0 0 20%;
+    max-width: 20%;
+    text-align: center;
+    position: relative;
+  }
+  .home-container .home-img img {
+    margin: auto;
+    border-radius: 70%;
+    width: 220px;
+    height: auto;
+  }
+
+  .home-container .row {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  .home-img::after {
+    content: "";
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    right: -200px;
+    bottom: 10px;
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
+  }
+
+  .home-img::before {
+    content: "";
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    left: 10px;
+    top: -20px;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
   }
   .git-list .react-activity-calendar img {
     width: 100%;
