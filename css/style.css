@@ -91,9 +91,11 @@ ul {
 }
 .section .container {
   padding-top: 60px;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
 }
-
+#section2 {
+  padding: 0 !important;
+}
 .section-title {
   flex: 0 0 100%;
   max-width: 100%;
@@ -136,6 +138,7 @@ ul {
   font-size: 16px;
   font-weight: 500;
   padding: 12px 35px;
+  margin-left: 10px;
   color: white;
   border-radius: 40px;
   display: inline-block;
@@ -326,7 +329,7 @@ h3.hello span {
 }
 
 h3.my-profession {
-  font-size: 30px;
+  font-size: 26px;
   margin: 15px 0;
 }
 
@@ -442,7 +445,13 @@ h3.my-profession {
   max-width: 40%;
   margin-top: 40px;
 }
-
+.side-heading {
+  margin-top: 25px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
 .about .about-content .skills .skill-item {
   flex: 0 0 100%;
   max-width: 100%;
@@ -506,7 +515,7 @@ h3.my-profession {
 
 .about .about-content .timeline {
   background-color: var(--bg-black-100);
-  padding: 30px 15px;
+  padding: 30px 12px;
   border: 1px solid var(--bg-black-50);
   width: 100%;
   border-radius: 10px;
@@ -870,7 +879,7 @@ h3.my-profession {
 
 @media (max-width: 1199px) {
   .section .container {
-    padding-top: 90px;
+    padding-top: 20px;
   }
   .home-container .home-info {
     padding: 0;
@@ -917,10 +926,6 @@ h3.my-profession {
     align-items: center;
     justify-content: space-evenly;
   }
-  .hidden {
-    display: block;
-    visibility: visible;
-  }
   .home-container .home-info {
     flex: 0 0 100%;
     max-width: 100%;
@@ -928,6 +933,7 @@ h3.my-profession {
   }
 
   .home-container .home-img {
+    margin-top: 80px;
     flex: 0 0 70%;
     max-width: 70%;
     text-align: center;
@@ -1039,12 +1045,15 @@ h3.my-profession {
     max-width: 100%;
   }
 
-  .home-container .home-img {
-    flex: 0 0 20%;
-    max-width: 20%;
-    text-align: center;
-    position: relative;
+  /* .main-content {
+    border: 2px solid red;
+  } */
+  .section {
+    left: 0;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
   }
+
   .home-container .home-img img {
     margin: auto;
     border-radius: 70%;
@@ -1055,7 +1064,7 @@ h3.my-profession {
   .home-container .row {
     display: flex;
     flex-direction: column-reverse;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-evenly;
   }
 
@@ -1064,10 +1073,10 @@ h3.my-profession {
     position: absolute;
     height: 60px;
     width: 60px;
-    right: -200px;
+    right: -30px;
     bottom: 10px;
-    border-bottom: 10px solid var(--skin-color);
-    border-right: 10px solid var(--skin-color);
+    border-bottom: 7px solid var(--skin-color);
+    border-right: 7px solid var(--skin-color);
   }
 
   .home-img::before {
@@ -1077,13 +1086,51 @@ h3.my-profession {
     width: 60px;
     left: 10px;
     top: -20px;
-    border-top: 10px solid var(--skin-color);
-    border-left: 10px solid var(--skin-color);
+    border-top: 7px solid var(--skin-color);
+    border-left: 7px solid var(--skin-color);
   }
   .git-list .react-activity-calendar img {
     width: 100%;
     padding: 10px;
     border: 6px solid var(--bg-black-100);
     margin: 20px auto;
+  }
+
+  .about .about-content .timeline .timeline-item {
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 50px;
+  }
+  .know-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 10px;
+  }
+  .know-work {
+    position: relative;
+    overflow: hidden;
+    border-style: solid;
+    border: 1px solid var(--text-black-700);
+    /* border-image: conic-gradient(black,black, rgb(82, 82, 180),blue,rgb(115, 115, 190), black, black) 3; */
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+  .portfolio .portfolio-item {
+    padding: 0 !important;
+  }
+  .personal-info .row {
+    display: flex !important;
+    /* flex-direction: column; */
+    /* align-items: center !important; */
+    justify-content: center;
+  }
+  .about .about-content .personal-info .info-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .about .about-content .personal-info .info-item p span {
+    display: inline;
+    margin-left: 0;
   }
 }
