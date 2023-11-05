@@ -1044,6 +1044,7 @@ h3.my-profession {
   .contact .contact-info-item {
     flex: 0 0 100%;
     max-width: 100%;
+    border-bottom: 1px solid var(--bg-black-50);
   }
 
   /* .main-content {
@@ -1133,5 +1134,56 @@ h3.my-profession {
   .about .about-content .personal-info .info-item p span {
     display: inline;
     margin-left: 0;
+  }
+  .contact-info-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .contact-info-item h4 {
+    display: none;
+  }
+  .contact-info-item .icon {
+    cursor: pointer;
+  }
+  .contact-info-item .link {
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 7px;
+  }
+  .contact-info-item a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .contact-info-item .info-content {
+    width: 80%;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .contact-info-item .info-content p,
+  .contact-info-item .link p {
+    padding-left: 15px;
+    margin-bottom: 6px;
+    text-align: left;
+    overflow: auto;
+    width: 100%;
+  }
+  .contact .contact-info-item {
+    margin-bottom: 40px;
+    /* padding: 0 !important; */
+  }
+  .contact .contact-form {
+    padding: 0 !important;
+  }
+  .contact .contact-form .form-item {
+    margin-bottom: 20px;
+  }
+  .contact .contact-form .form-item .form-control {
+    padding: 5px 20px;
+    /* border-radius: 10px; */
   }
 }
