@@ -402,7 +402,7 @@ h3.my-profession {
   color: var(--skin-color);
 }
 .about .about-content .about-text p {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 25px;
   color: var(--text-black-700);
 }
@@ -420,7 +420,7 @@ h3.my-profession {
 .about .about-content .personal-info .info-item p {
   font-weight: 600;
   padding: 10px 0;
-  font-size: 16px;
+  font-size: 17px;
   color: var(--text-black-900);
   border-bottom: 1px solid var(--bg-black-50);
 }
@@ -551,7 +551,7 @@ h3.my-profession {
 
 .about .about-content .timeline .timeline-date {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 12px;
   color: var(--text-black-700);
 }
@@ -569,7 +569,7 @@ h3.my-profession {
 }
 .about .about-content .timeline .timeline-text {
   line-height: 25px;
-  font-size: 16px;
+  font-size: 17px;
   text-align: justify;
   color: var(--text-black-700);
 }
@@ -768,6 +768,7 @@ h3.my-profession {
 }
 
 .portfolio .portfolio-item-inner .project-description {
+  font-size: 17px;
   color: var(--text-black-900);
   margin: 10px;
 }
@@ -828,7 +829,7 @@ h3.my-profession {
 }
 
 .contact .contact-info-item p {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 25px;
   color: var(--text-black-700);
   font-weight: 400;
