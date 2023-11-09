@@ -344,6 +344,10 @@ h3.my-profession {
   position: relative;
   left: 20%;
 }
+#resume-button-2 {
+  border: none;
+  background: none;
+}
 
 .home-container .home-img {
   flex: 0 0 40%;

@@ -111,7 +111,6 @@ function asideSectionToggleBtn() {
 const downloadResume = () => {
   let resumeLink =
     "https://drive.google.com/uc?export=download&id=1Kwc0ssMx9T483VdIGznP-OibJTNnXIep";
-  // Trigger a download by creating an invisible anchor element
   var downloadAnchor = document.createElement("a");
   downloadAnchor.style.display = "none";
   downloadAnchor.href = resumeLink;
