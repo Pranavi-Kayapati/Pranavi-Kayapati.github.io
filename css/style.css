@@ -46,13 +46,6 @@ ul {
   padding: 0 30px;
   opacity: 1;
   padding-left: 270px;
-  /* position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 0;
-  overflow-y: scroll;
-  overflow-x: scroll; */
   transition: all 0.3s ease;
 }
 
@@ -62,7 +55,6 @@ ul {
 .section.active {
   z-index: 2;
   opacity: 1;
-  /* animation: slideSection 1s ease; */
 }
 
 @keyframes slideSection {
@@ -77,9 +69,7 @@ ul {
   display: none !important;
   visibility: hidden;
 }
-/* .main-content {
-  padding-left: 270px;
-} */
+
 .padd-15 {
   padding-left: 15px;
   padding-right: 15px;
@@ -243,7 +233,6 @@ ul {
   left: 0;
 }
 .aside .nav-toggler.open span::before {
-  /* background-color: transparent; */
   transform: rotate(-45deg);
 }
 
@@ -258,7 +247,6 @@ ul {
 }
 
 .aside .nav-toggler.open span::after {
-  /* background-color: transparent; */
   transform: rotate(45deg);
 }
 
@@ -623,7 +611,6 @@ h3.my-profession {
   overflow: hidden;
   border-style: solid;
   border: 1px solid var(--text-black-700);
-  /* border-image: conic-gradient(black,black, rgb(82, 82, 180),blue,rgb(115, 115, 190), black, black) 3; */
   border-radius: 20px;
   margin-bottom: 30px;
 }
@@ -654,15 +641,7 @@ h3.my-profession {
   transform: scale(1.09);
 }
 
-/* .skill-items {
-  border: 2px solid red;
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(10, 1fr);
-} */
-
 .skill-items .item .skills-card-img {
-  /* border: 2px solid black; */
   width: 100px;
 }
 
@@ -1053,9 +1032,6 @@ h3.my-profession {
     border-bottom: 1px solid var(--bg-black-50);
   }
 
-  /* .main-content {
-    border: 2px solid red;
-  } */
   .section {
     left: 0;
     padding-left: 30px !important;
