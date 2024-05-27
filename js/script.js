@@ -109,8 +109,7 @@ function asideSectionToggleBtn() {
 }
 
 const downloadResume = () => {
-  let resumeLink =
-    "https://drive.google.com/uc?export=download&id=1Kwc0ssMx9T483VdIGznP-OibJTNnXIep";
+  let resumeLink = "/css/images/Pranavi-Kayapati-Resume (6).pdf";
   var downloadAnchor = document.createElement("a");
   downloadAnchor.style.display = "none";
   downloadAnchor.href = resumeLink;
